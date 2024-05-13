@@ -1,4 +1,4 @@
-const { apiResponse } = require(".../11_async.js");
+const { apiResponse } = require("./11_async");
 
 const parallel = async () => {
   const urls = [
