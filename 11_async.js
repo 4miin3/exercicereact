@@ -1,4 +1,4 @@
-const { sleep } = require("./10_promise");
+const { sleep } = require("./10_promise.js");
 const axios = require("axios");
 
 const usingThen = (cb) => {
