@@ -1,4 +1,3 @@
-
 /**
  * Utiliser les ternaires en les chainants, pour éviter les if elseif else
  * 
@@ -9,11 +8,6 @@
  * Contraintes:
  *    - utiliser l'opérateur ternaire (if interdit)
  */
-
-function ternaryChain(a, b) {
-}
-
-module.exports = ternaryChain;
 
 function ternaryChain(a, b) {
     return a > b ? '>' : (a < b ? '<' : '=');
