@@ -41,3 +41,7 @@ const merge = (obj1, obj2) => ({...obj1, ...obj2});
 const setName = (obj, name) => ({...obj, name});
 
 module.exports = { concat, push, merge, setName };
+
+{
+    
+}
