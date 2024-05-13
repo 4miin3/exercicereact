@@ -9,7 +9,6 @@
  *  - ne pas utiliser l'opérateur +
  *  - ne pas utiliser la fonction concat de String
  */
+const concat = (firstName, lastName) => `${firstName} ${lastName}`;
 
-const concat = (firstName, lastName) => {}
-
-module.exports = {concat};
+module.exports = { concat };
