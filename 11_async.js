@@ -1,4 +1,4 @@
-const { sleep } = require("../exercices_start/10_promise");
+const { sleep } = require("../exercices_start/10_promise.js");
 const axios = require("axios");
 
 const usingThen = (cb) => {
