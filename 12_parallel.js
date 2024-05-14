@@ -10,7 +10,7 @@ const parallel = async () => {
           ];    
 
           const response = await Promise.all(urls.map(url =>apiResponse(url)));
-
+//return les resulats des appels api
           return responses;
     }
     catch(error){
