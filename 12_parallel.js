@@ -2,22 +2,20 @@ const { apiResponse } = require("./11_async");
 
 const parallel = async () => {
     try {
-        const urls  
-        = [
+        const urls = [
             'https://jsonplaceholder.typicode.com/todos/1',
             'https://jsonplaceholder.typicode.com/todos/2',
             'https://jsonplaceholder.typicode.com/todos/3'
-          ];    
+        ];    
 
-          const response = await Promise.all(urls.map(url =>apiResponse(url)));
-//return les resulats des appels api
-          return responses;
-    }
-    catch(error){
-        console.error('error exuting parallel requets', error);
+        const responses = await Promise.all(urls.map(url => apiResponse(url)));
+
+        // Retourne les résultats des appels API
+        return responses;
+    } catch(error) {
+        console.error('Erreur lors de l\'exécution des requêtes parallèles', error);
         throw error;
-
     }
 };
 
-module.export ={parallel};
+module.exports = { parallel };
